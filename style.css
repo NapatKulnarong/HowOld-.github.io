@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Special Elite', Times, serif, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg.jpeg);
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    color: #000000af;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 100%;
+    max-width: 750px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: 60px;
+    text-shadow: 4px 4px 7px #ffffff;
+    text-align: left;
+}
+.caption{
+    font-size: 30px;
+    text-shadow: 4px 4px 7px #ffffff;
+}
+.calculator h1 span{
+    color: #444444;
+}
+.input-box{
+    margin: 0;
+    padding: 35px;
+    padding-left: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    padding-top: 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+.input-box button{
+    background: #484239;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    padding-top: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+#result{
+    margin-top: 20px;
+    font-size: 26px;
+    text-shadow: 4px 4px 7px #fffaa5;
+}
+#result span{
+    color: #000000a3;
+}
+
+@media(max-width: 700px) {
+    body{
+        background-image: url(./images/bg-phone.jpeg);
+        background-size:auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container{
+        margin-top: 250px;
+    }
+    .calculator{
+        width: 100%;
+        max-width: 500px;
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+    .caption{
+        font-size: 15px;
+    }
+    .input-box input{
+        font-size: 13px;
+    }
+    #result{
+        font-size: 15px;
+    }
+
+    
+}
